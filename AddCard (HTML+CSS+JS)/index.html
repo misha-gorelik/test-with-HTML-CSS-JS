@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Card</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <section class="add-card">
+
+        <div class="container">
+            <h1 class="main-title">Add card</h1>
+            <a href="#!" class="btn-add">Нажми, чтобы добавить карточку</a>
+        </div>
+    </section>
+    <div class="modal-block none">
+        <div class="modal">
+            <div class="close-modal">x</div>
+            <form action="#" name="main" class="main-form">
+                <div class="main-form__item">
+                    <label for="input1" class="main-form__label">Введите имя</label>
+                    <input class="main-form__input" type="text" name="nameInput" placeholder="Введите имя тут" id="input1" value="">                        
+                </div>
+                <div class="main-form__item">
+                    <label for="input2" class="main-form__label">Введите описание</label>
+                    <textarea maxlength="100" class="main-form__text-area" type="text" name="textInput" id="input2">
+                    </textarea>                        
+                </div>
+                <div class="main-form__item">
+                    <label for="file1" class="main-form__label">Добавить фото</label>
+                    <input class="main-form__file" type="file" name="fileInput" id="file1">                        
+                </div>
+                <div class="main-form__item">
+                    <a href="#!" class="btn-submit" type="submit">Опубликовать</a>                       
+                </div>
+                
+            </form>
+        </div>
+ 
+    </div>
+    <section class="card">
+        <div class="container">
+             <div class="card-row">
+                 <!-- <div class="card-item">
+                     <div class="card-img">
+                         <img src="/img/206853.png" alt="misha">
+                     </div>
+                     <h4 class="card-title">Михаил Горелик</h4>
+                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eos, dolorem aliquid ipsa ut deleniti. Repudiandae facilis fugit error harum a, odio minima voluptas, eum quisquam esse magni libero quae?</p>
+                 </div> -->
+             </div>
+         </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>

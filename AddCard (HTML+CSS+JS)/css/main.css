@@ -1,0 +1,288 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+img, svg {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+form, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type="submit"] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: darkslategrey;
+  position: relative;
+}
+
+.none {
+  display: none !important;
+}
+
+.visually-hidden {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  display: block;
+  margin-left: -10000px;
+  background: transparent;
+  font-size: 0;
+}
+
+.container {
+  width: 1400px;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+.add-card {
+  padding-top: 100px;
+}
+
+.main-title {
+  font-size: 25px;
+  color: darkslategrey;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.btn-add {
+  width: 250px;
+  height: 75px;
+  padding: 20px;
+  color: #fff;
+  background-color: darkslategrey;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.btn-add:hover {
+  color: #fff;
+  background-color: #3b6464;
+}
+
+.modal-block {
+  display: block;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  padding-top: 50px;
+}
+
+.close-modal {
+  display: inline-block;
+  right: 200px;
+  top: 200px;
+  z-index: 101;
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  color: #222;
+}
+
+.modal {
+  margin: 0 auto;
+  width: 500px;
+  min-height: 300px;
+}
+
+.main-form {
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: lightgray;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+.main-form__item + .main-form__item {
+  margin-top: 25px;
+}
+
+.main-form__input {
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+}
+
+.main-form__label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.main-form__text-area {
+  width: 400px;
+  min-height: 100px;
+  padding: 10px;
+}
+
+.btn-submit {
+  width: 250px;
+  height: 50px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: darkslategrey;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.btn-submit:hover {
+  color: #fff;
+  background-color: #3b6464;
+}
+
+.card {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.card-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  gap: 30px;
+  flex-wrap: wrap;
+
+}
+
+.card-item {
+  width: 350px;
+  min-height: 300px;
+  padding: 30px;
+  background-color: #f0f0f0;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-item * + * {
+  margin-top: 15px;
+}
+
+.card-img {
+  width: 250px;
+  height: 250px;
+}
+
+.card-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.card-text {
+  width: 250px;
+  font-size: 15px;
+}
